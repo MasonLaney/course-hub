@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Home from "./Home";
-import Login from "./Login";
-import SignUp from "./SignUp";
-import { AuthProvider } from "./Auth";
-import PrivateRoute from "./PrivateRoute";
+import Home from "../Authentication/Home";
+import Login from "../Authentication/Login";
+import SignUp from "../Authentication/SignUp";
+import { AuthProvider } from "../Authentication/Auth";
+import PrivateRoute from "../Authentication/PrivateRoute";
 
 const App = () => {
   return (
