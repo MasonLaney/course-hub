@@ -21,8 +21,8 @@ const SignUp = ({ history }) => {
       <h1>Sign up</h1>
       <form onSubmit={handleSignUp}>
         <label>
-          Email
-          <input name="email" type="email" placeholder="Email" />
+          Onyen
+          <input name="email" type="email" placeholder="Onyen" />
         </label>
         <label>
           Password
