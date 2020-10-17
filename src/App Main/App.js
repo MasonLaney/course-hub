@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Home from "../Authentication/Home";
+import Home from "../Course Hub Content/Home";
 import Login from "../Authentication/Login";
 import SignUp from "../Authentication/SignUp";
 import { AuthProvider } from "../Authentication/Auth";
