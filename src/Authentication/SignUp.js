@@ -3,6 +3,8 @@ import { withRouter } from "react-router";
 import app from "./base";
 
 const SignUp = ({ history }) => {
+
+  //happens when user clicks on submit
   const handleSignUp = useCallback(async event => {
     event.preventDefault();
     const { email, password } = event.target.elements;
@@ -14,6 +16,10 @@ const SignUp = ({ history }) => {
     } catch (error) {
       alert(error);
     }
+
+    //fetch http data
+
+
   }, [history]);
 
   return (
