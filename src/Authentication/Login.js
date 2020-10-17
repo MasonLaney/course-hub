@@ -36,7 +36,7 @@ const Login = ({ history }) => {
         </label>
         <label>
           Password
-          <input name="password" type="password" placeholder="Password" />
+          <input name="password" type="password" placeholder="Onyen password" />
         </label>
         <button type="submit">Log in</button>
       </form>
