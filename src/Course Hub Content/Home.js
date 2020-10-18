@@ -1,27 +1,32 @@
-import React from "react";
+import React, {Component} from "react";
 import app from "../Authentication/base";
+import data from "./test_deadlines.json"
 
-import deadlineData from "../Authentication/test_deadlines"
+class Home extends Component {
 
-function Home() {
+    render() {
+        /*var schedule = data;
+        this.schedule.map(item => {
+            return(
+                <div>Class {item.class} and time {item.time}</div>
+            )
+        })*/
+        //console.log(data)
 
-    const deadlines = deadlineData.map(deadline => {
-	    return (
-		    <p>{deadline}</p>
-	    )
-    })
+        return (
+            <div>
+                <h1>Home Page</h1>
+                <div>
+                    {data.map(item => {
+                        return(
+                            <div>Class {item.class} and time {item.time}</div>
+                    )})}
+                </div>
 
-    //componentDidMount() {
-
-    //}
-
-    return (
-        <div>
-            <h1>Home</h1>
-            <p>{deadlines}</p>
-            <button onClick={() => app.auth().signOut()}>Sign out</button>
-        </div>
-    )
+                <button onClick={() => app.auth().signOut()}>Sign out</button>
+            </div>
+        )
+    }
 }
 
 export default Home;
