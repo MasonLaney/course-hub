@@ -54,7 +54,7 @@ body {
 }
 
 .inputText {
-    padding-top: 8px;
+    padding-top: 5px;
     font-size: 15px;
     font-weight: bold;
 }
@@ -71,6 +71,7 @@ body {
     background-color: #CFD8DC;
     color: black;
     border-color: black;
+    border-radius: 5px;
 }
 
 .titleText{
@@ -81,7 +82,8 @@ body {
 }
 
 .flavorText {
-    font-size: 14px;
+    font-size: 15px;
     padding-top: -20px;
     padding-bottom: 14px;
+    font-style: oblique;
 }
