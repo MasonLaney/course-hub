@@ -80,7 +80,12 @@ class Home extends Component {
                             <div>Class {item.class} and time {item.time}</div>
                     )})}
                 </div>
-                <DayBox dayArr={this.state.monday}/>
+                <DayBox day="Monday" classes={this.state.monday}/>
+                <DayBox day="Tuesday" classes={this.state.tuesday}/>
+                <DayBox day="Wednesday" classes={this.state.wednesday}/>
+                <DayBox day="Thursday" classes={this.state.thursday}/>
+                <DayBox day="Friday" classes={this.state.friday}/>
+
                 <button onClick={() => app.auth().signOut()}>Sign out</button>
             </div>
         )
