@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import app from "../Authentication/base";
 import DayBox from "./DayBox";
 import data from "./test_deadlines.json"
+import Deadlines from "./Deadlines";
 
 class Home extends Component {
 
@@ -88,7 +89,7 @@ class Home extends Component {
                 <DayBox day="Wednesday" classes={this.state.wednesday}/>
                 <DayBox day="Thursday" classes={this.state.thursday}/>
                 <DayBox day="Friday" classes={this.state.friday}/>
-
+                <Deadlines/>
                 <button className="button" onClick={() => app.auth().signOut()}>Sign out</button>
             </div>
         )
