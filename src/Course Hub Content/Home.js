@@ -16,9 +16,7 @@ class Home extends Component {
         };
     }
 
-    createBoxes() {
-
-
+    categorizeClasses() {
         this.state.schedule.forEach(item => {
 
             //if the class is on monday
@@ -60,7 +58,7 @@ class Home extends Component {
             newStateArray.push({class: item.class, time: item.time, key: item.key})
             this.setState({schedule: newStateArray})
         })
-        this.createBoxes()
+        this.categorizeClasses()
 
 
     }
@@ -81,7 +79,7 @@ class Home extends Component {
                             <div>Class {item.class} and time {item.time}</div>
                     )})}
                 </div>
-
+                <DayBox
                 <button onClick={() => app.auth().signOut()}>Sign out</button>
             </div>
         )
