@@ -15,7 +15,7 @@ class Deadlines extends Component {
         this.setState()
         data.map(item => {
             var newStateArray = this.state.deadlines;
-            if(item.submitted === "Not Started") {
+            if(item.submitted.normalize() === "Not Started") {
                 newStateArray.push({
                     submitted: item.submitted,
                     title: item.title,
@@ -38,7 +38,10 @@ class Deadlines extends Component {
                 <div>
                     {
                         this.state.deadlines.map(item => {
-                            return(<p>{item.title} {item.due}</p>)
+                            return(
+                                <p style={{padding: "10px", textAlign: "left", border: "1px solid blue"}}>
+                                    <div style={{tabSize: "4"}}> {item.due}, {item.title} <a href={item.link}>View Assignment</a></div>
+                                </p>)
                         })
                     }
                 </div>
