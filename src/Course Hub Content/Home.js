@@ -80,7 +80,7 @@ class Home extends Component {
                 <h1 style={{backgroundColor: "yellow", fontFamily: "TeX Gyre Adventor"}}>CourseHub</h1>
                 <div>
                     <h2 style={{textDecoration: "underline"}}>Times</h2>
-                    {this.state.schedule.map(item => {
+                    {this.state.schedule.map(item  => {
                         return(
                             <div style = {{paddingLeft: "25%",textAlign: "left"}}>
                                 <span style={{fontWeight: "bold"}}>{item.class}</span>
