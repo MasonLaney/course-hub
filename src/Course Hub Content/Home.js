@@ -89,7 +89,7 @@ class Home extends Component {
                 <DayBox day="Thursday" classes={this.state.thursday}/>
                 <DayBox day="Friday" classes={this.state.friday}/>
 
-                <button onClick={() => app.auth().signOut()}>Sign out</button>
+                <button className="button" onClick={() => app.auth().signOut()}>Sign out</button>
             </div>
         )
     }

@@ -60,12 +60,12 @@ body {
 }
 
 .button {
-    width: 30%;
-    height: 10%;
+    width: 100px;
+    height: 40px;
     overflow: auto;
-    margin: auto;
+    margin: inherit;
     position: absolute;
-    top: 60%; left: 0; bottom: 0; right: 0;
+    top: 0; left: 0; bottom: 0%; right: 0;
     font-size: 16px;
     font-weight: bold;
     background-color: #CFD8DC;
@@ -116,11 +116,13 @@ body {
 *::-webkit-scrollbar {
     width: 12px;
     height: 10px;
+    transform: translateX(-15px);
 }
 *::-webkit-scrollbar-track {
     background: white;
     margin-top: 20px;
     margin-bottom: 20px;
+    transform: translateX(-15px);
 }
 *::-webkit-scrollbar-thumb {
     background-color: #CFD8DC;
