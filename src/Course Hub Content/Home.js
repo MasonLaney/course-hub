@@ -3,6 +3,7 @@ import app from "../Authentication/base";
 import DayBox from "./DayBox";
 import data from "./test_deadlines.json"
 import Deadlines from "./Deadlines";
+import OtherLink from "./OtherLink";
 
 class Home extends Component {
 
@@ -15,7 +16,8 @@ class Home extends Component {
             tuesday: [],
             wednesday: [],
             thursday: [],
-            friday: []
+            friday: [],
+	        classes: []
         };
     }
 
@@ -51,7 +53,11 @@ class Home extends Component {
             if(item.time.includes("Fr")) {
                 newStateArray = this.state.friday;
                 newStateArray.push({class: item.class, link: item.link})
-                this.setState({friday: newStateArray})            }
+                this.setState({friday: newStateArray})
+            }
+	        newStateArray = this.state.classes;
+	        newStateArray.push({name: item.class})
+	        this.setState({classes: newStateArray})
         })
     }
 
@@ -99,6 +105,7 @@ class Home extends Component {
                     </div>
 
                 </div>
+	            <OtherLink classes={this.state.classes}/>
                 <Deadlines/>
                 <button className="signOutButton" onClick={() => app.auth().signOut()}>Sign out</button>
             </div>

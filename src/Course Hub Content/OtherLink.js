@@ -1,17 +1,54 @@
-import React from "react"
+import React, {Component} from "react"
 
-const OtherLink = (props) => {
-	const className = props.className
-	const name = props.name
-	const link = props.link
+class OtherLink extends Component {
 
-	return (
-		<div className="otherLink">
+	constructor() {
+		super();
+		this.state = {
+		};
+	}
 
-			<a href={props.link}><button className="otherLinkButton">props.name</button></a>
+	addLink() {
+		this.setState()
+	}
 
-		</div>
-	)
+	render() {
+		return (
+			<div className="otherLink">
+
+				<h2 className="header">Links:</h2>
+
+				<div>
+					{
+						this.props.classes.map(item => {
+							return(
+								<div>
+									<p className="otherLinkClass">{item.name}</p>
+
+									<form onSubmit={this.addLink} className="addLinkBox">
+										<label>
+											Name:
+											<input name="name" type="text" placeholder="" />
+										</label>
+										<p></p>
+										<label>
+											Link:
+											<input name="link" type="url" placeholder="" />
+										</label>
+										<button type="submit" className="addLink">Add Link</button>
+									</form>
+
+									<p>{item.link}</p>
+									<a href={item.link}><button className="">{item.name}</button></a>
+								</div>
+								)
+						})
+					}
+				</div>
+
+			</div>
+		)
+	}
 }
 
 export default OtherLink

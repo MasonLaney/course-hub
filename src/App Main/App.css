@@ -198,10 +198,11 @@ body {
     float: right;
     background-color: #81D4FA;
     border-radius: 5px;
-    height: 28px;
-    transform: translateY(-6px);
+    height: 20px;
+    width: 150px;
     margin-right: 0px;
-    margin-top: 2px;
+    margin-top: 0px;
+    margin-bottom: -5px;
 }
 
 .header {
@@ -235,4 +236,13 @@ body {
     position: relative;
     width: 100%;
     align-content: center;
+}
+
+.otherLinkClass{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.addLink {
+
 }
