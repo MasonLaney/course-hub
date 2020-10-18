@@ -75,7 +75,7 @@ class Home extends Component {
         console.log(this.state.thursday)
         console.log(this.state.friday)
         return (
-            <div>
+            <div className="mainPageContent">
                 <h1>Home Page</h1>
                 <div>
                     {this.state.schedule.map(item => {

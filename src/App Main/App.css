@@ -99,3 +99,16 @@ body {
     padding-bottom: 14px;
     font-style: oblique;
 }
+
+.mainPageContent {
+    background-color: white;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 8px 12px;
+    width: 92%;
+    height: 88%;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    padding-top: 25px;
+}
