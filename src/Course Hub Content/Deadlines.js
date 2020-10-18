@@ -10,12 +10,7 @@ class Deadlines extends Component {
         };
     }
 
-    //fetch schedule data when
-    /*
-    TODO 1: delete assignments with due date before current (today's) date
-    TODO 2: put all the due dates in another array to sort
-    TODO 3: sort by date
-     */
+    //fetch schedule data when mounting
     componentDidMount() {
         this.setState()
         data.map(item => {
