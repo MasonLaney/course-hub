@@ -79,15 +79,18 @@ class Home extends Component {
             <div className="mainPageContent">
                 <h1>Home Page</h1>
                 <div>
+                    <h2 style={{textDecoration: "underline"}}>Times</h2>
                     {this.state.schedule.map(item => {
                         return(
-                            <div style = {{padding: "20px",textAlign: "left"}}>{item.class}    Time {
-                                item.time.split("Mo")}
+                            <div style = {{paddingLeft: "25%",textAlign: "left"}}>
+                                <span style={{fontWeight: "bold"}}>{item.class}</span>
+                                <span style = {{paddingLeft: "25%",textAlign: "left"}}>Time: {item.time.split(new RegExp('[' + ["Mo", "Tu", "We", "Th", "Fr"].join('') + ']', 'g'))}</span>
                             </div>
                     )})}
                 </div>
                 <div className="gridContainer">
                     <div>
+                        <h2 style={{textDecoration: "underline"}}>Schedule</h2>
                         <DayBox day="Monday" classes={this.state.monday}/>
                         <DayBox day="Tuesday" classes={this.state.tuesday}/>
                         <DayBox day="Wednesday" classes={this.state.wednesday}/>
