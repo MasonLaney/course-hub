@@ -77,9 +77,9 @@ class Home extends Component {
         console.log(this.state.friday)
         return (
             <div className="mainPageContent">
-                <h1 style={{backgroundColor: "yellow", fontFamily: "TeX Gyre Adventor"}}>CourseHub</h1>
+                <h1 style={{backgroundColor: "#81D4FA", fontFamily: "TeX Gyre Adventor"}}>CourseHub</h1>
                 <div>
-                    <h2 style={{textDecoration: "underline"}}>Times</h2>
+                    <h2 className="header">Times</h2>
                     {this.state.schedule.map(item  => {
                         return(
                             <div style = {{paddingLeft: "25%",textAlign: "left"}}>
@@ -90,7 +90,7 @@ class Home extends Component {
                 </div>
                 <div className="gridContainer">
                     <div>
-                        <h2 style={{textDecoration: "underline"}}>Schedule</h2>
+                        <h2 h2 className="header">Schedule</h2>
                         <DayBox day="Monday" classes={this.state.monday}/>
                         <DayBox day="Tuesday" classes={this.state.tuesday}/>
                         <DayBox day="Wednesday" classes={this.state.wednesday}/>
