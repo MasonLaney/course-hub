@@ -5,6 +5,7 @@ import data from "./test_deadlines.json"
 
 class Home extends Component {
 
+    // set up state to hold the schedule, the classes for each day, and the deadlines
     constructor() {
         super();
         this.state = {
@@ -17,6 +18,7 @@ class Home extends Component {
         };
     }
 
+    // categorize the classes for each day to format weekly schedule
     categorizeClasses() {
         this.state.schedule.forEach(item => {
             var newStateArray;
@@ -52,6 +54,7 @@ class Home extends Component {
         })
     }
 
+    //fetch schedule data when
     componentDidMount() {
         this.setState()
         data.map(item => {
