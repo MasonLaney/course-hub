@@ -32,13 +32,13 @@ const Login = ({ history }) => {
 	        <p className="flavorText">(We don't store any of your info)</p>
 	        <form onSubmit={handleLogin} className="inputText">
 	            <label>
-	                Onyen:
-		            <input name="email" type="email" placeholder="Onyen" />
+	                UNC Email:
+		            <input name="email" type="email" placeholder="onyen@live.unc.edu" />
 	            </label>
 		        <p></p>
 	            <label>
 	                Password:
-	                <input name="password" type="password" placeholder="Onyen password" />
+	                <input name="password" type="password" placeholder="password" />
 	            </label>
 	            <button type="submit" className="button">Log in</button>
 	        </form>
