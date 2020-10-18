@@ -160,7 +160,7 @@ body {
 
 .gridContainer {
     display: grid;
-    padding: 30px;
+    padding: 5px;
     gap: 20px 5px;
 }
 
@@ -175,4 +175,64 @@ body {
     margin-right: 1%;
     margin-top: 1%;
     margin-bottom: 1%;
+}
+
+.deadlineRow {
+    padding: 10px;
+    background-color: #CFD8DC;
+    border-radius: 8px;
+    height: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.deadlineRowDue {
+    tab-size: 4;
+    float: left;
+    padding: 1px;
+}
+
+.deadlineRowView {
+    float: right;
+    background-color: #81D4FA;
+    border-radius: 5px;
+    height: 28px;
+    transform: translateY(-6px);
+    margin-right: 0px;
+    margin-top: 2px;
+}
+
+.header {
+    text-decoration: underline;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.timeText1 {
+    text-align: right;
+    width: 50%;
+    float: right;
+    position: absolute;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+.timeText2 {
+    text-align: left;
+    width: 50%;
+    float: left;
+    position: absolute;
+    padding-left: 20px;
+}
+
+.timeText {
+    position: relative;
+    width: 100%;
+    align-content: center;
 }

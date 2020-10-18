@@ -33,17 +33,15 @@ class Deadlines extends Component {
         console.log(this.state.deadlines)
         return(
             <div>
-                <h1>Deadlines:</h1>
+                <h2 className="header">Deadlines:</h2>
 
                 <div>
                     {
                         this.state.deadlines.map(item => {
                             return(
-                                <p style={{padding: "10px", textAlign: "left", border: "1px solid blue"}}>
-                                    <div style={{tabSize: "4"}}>
-                                        <span style={{}}>{item.due} | {item.title}</span>
-                                        <span style={{textAlign: "right"}}> <a href={item.link}>View Assignment</a></span>
-                                    </div>
+                                <p className="deadlineRow">
+                                    <span className="deadlineRowDue">{item.due} &nbsp; | &nbsp; {item.title}</span>
+                                    <span className="deadlineRowView"><a className="link" href={item.link}>View Assignment</a></span>
                                 </p>)
                         })
                     }
