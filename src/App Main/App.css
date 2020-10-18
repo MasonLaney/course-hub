@@ -157,3 +157,13 @@ body {
     border-radius: 8px;
     border: 4px solid transparent;
 }
+
+.gridContainer {
+    display: grid;
+}
+
+.gridItem {
+    display: inline-grid;
+    grid-row-start: 1;
+    grid-row-end: 7;
+}
