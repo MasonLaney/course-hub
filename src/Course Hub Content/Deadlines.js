@@ -20,16 +20,17 @@ class Deadlines extends Component {
         this.setState()
         data.map(item => {
             var newStateArray = this.state.deadlines;
-
-            newStateArray.push({
-                submitted: item.submitted,
-                title: item.title,
-                due: item.due,
-                link: item.link,
-                open: item.open,
-                key: item.key
-            })
-            this.setState({schedule: newStateArray})
+            if(item.submitted === "Not Started") {
+                newStateArray.push({
+                    submitted: item.submitted,
+                    title: item.title,
+                    due: (item.due === "") ? "No due date" : item.due,
+                    link: item.link,
+                    open: item.open,
+                    key: item.key
+                })
+                this.setState({schedule: newStateArray})
+            }
         })
     }
 
@@ -38,11 +39,14 @@ class Deadlines extends Component {
         return(
             <div>
                 <h1>Deadlines:</h1>
-                {
-                    this.state.deadlines.map(item => {
-                        return(<p>Assignment #{item.key}: {item.due}</p>)
-                    })
-                }
+
+                <div>
+                    {
+                        this.state.deadlines.map(item => {
+                            return(<p>{item.title} {item.due}</p>)
+                        })
+                    }
+                </div>
             </div>
 
         )
