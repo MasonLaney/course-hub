@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/course-hub.iml" filepath="$PROJECT_DIR$/.idea/course-hub.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/clone-hub.iml" filepath="$PROJECT_DIR$/.idea/clone-hub.iml" />
     </modules>
   </component>
 </project>

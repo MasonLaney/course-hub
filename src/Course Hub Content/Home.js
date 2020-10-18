@@ -1,24 +1,27 @@
 import React from "react";
 import app from "../Authentication/base";
 
-class Home extends React.Component {
+import deadlineData from "../Authentication/test_deadlines"
 
-    constructor() {
-        super();
-    }
+function Home() {
+
+    const deadlines = deadlineData.map(deadline => {
+	    return (
+		    <p>{deadline}</p>
+	    )
+    })
 
     //componentDidMount() {
 
     //}
 
-    render() {
-        return (
-            <div>
-                <h1>Home</h1>
-                <button onClick={() => app.auth().signOut()}>Sign out</button>
-            </div>
-        )
-    }
-};
+    return (
+        <div>
+            <h1>Home</h1>
+            <p>{deadlines}</p>
+            <button onClick={() => app.auth().signOut()}>Sign out</button>
+        </div>
+    )
+}
 
 export default Home;
