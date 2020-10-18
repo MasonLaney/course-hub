@@ -81,7 +81,9 @@ class Home extends Component {
                 <div>
                     {this.state.schedule.map(item => {
                         return(
-                            <div>Class {item.class} and time {item.time}</div>
+                            <div style = {{padding: "20px",textAlign: "left"}}>{item.class}    Time {
+                                item.time.split("Mo")}
+                            </div>
                     )})}
                 </div>
                 <div className="gridContainer">
