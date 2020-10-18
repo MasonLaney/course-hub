@@ -100,7 +100,7 @@ body {
     border: none;
     box-shadow: 2px 3px;
     cursor: pointer;
-    margin-top: 50px;
+    margin-top:50px;
     margin-bottom: 50px
 }
 
@@ -135,7 +135,7 @@ body {
     width: 92%;
     height: 88%;
     margin: auto;
-    position: relative;
+    position: absolute;
     top: 0; left: 0; bottom: 10px; right: 0;
     padding-top: 25px;
 }
