@@ -77,7 +77,7 @@ class Home extends Component {
         console.log(this.state.friday)
         return (
             <div className="mainPageContent">
-                <h1>Home Page</h1>
+                <h1 style={{backgroundColor: "yellow", fontFamily: "TeX Gyre Adventor"}}>CourseHub</h1>
                 <div>
                     <h2 style={{textDecoration: "underline"}}>Times</h2>
                     {this.state.schedule.map(item => {
