@@ -63,9 +63,9 @@ body {
     width: 100px;
     height: 40px;
     overflow: auto;
-    margin: inherit;
+    margin: auto;
     position: absolute;
-    top: 0; left: 0; bottom: 0%; right: 0;
+    top: 60%; left: 0; bottom: 0; right: 0;
     font-size: 16px;
     font-weight: bold;
     background-color: #CFD8DC;
@@ -82,6 +82,33 @@ body {
 }
 
 .button:focus{
+    background-color: #81D4FA;
+    outline: none;
+}
+
+.signOutButton {
+    width: 100px;
+    height: 40px;
+    overflow: auto;
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #CFD8DC;
+    color: black;
+    border-color: black;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 3px;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 50px
+}
+
+.signOutButton:hover{
+    background-color: #81D4FA;
+}
+
+.signOutButton:focus{
     background-color: #81D4FA;
     outline: none;
 }
@@ -108,8 +135,8 @@ body {
     width: 92%;
     height: 88%;
     margin: auto;
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
+    position: relative;
+    top: 0; left: 0; bottom: 10px; right: 0;
     padding-top: 25px;
 }
 
