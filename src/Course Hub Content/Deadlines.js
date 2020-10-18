@@ -40,7 +40,10 @@ class Deadlines extends Component {
                         this.state.deadlines.map(item => {
                             return(
                                 <p style={{padding: "10px", textAlign: "left", border: "1px solid blue"}}>
-                                    <div style={{tabSize: "4"}}> {item.due}, {item.title} <a href={item.link}>View Assignment</a></div>
+                                    <div style={{tabSize: "4"}}>
+                                        <span style={{}}>{item.due} | {item.title}</span>
+                                        <span style={{textAlign: "right"}}> <a href={item.link}>View Assignment</a></span>
+                                    </div>
                                 </p>)
                         })
                     }
