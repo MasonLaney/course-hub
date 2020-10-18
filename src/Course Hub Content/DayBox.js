@@ -16,8 +16,7 @@ const DayBox = (props) => {
                             onClick={(e) => {
                                 e.preventDefault();
                                 window.location.href= item.link;
-                            }}
-                        >
+                            }}>
                             {item.class.split('-')[0]}
                         </button>)
                 })}

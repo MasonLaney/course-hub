@@ -85,11 +85,14 @@ class Home extends Component {
                     )})}
                 </div>
                 <div className="gridContainer">
-	                <DayBox day="Monday" classes={this.state.monday}/>
-	                <DayBox day="Tuesday" classes={this.state.tuesday}/>
-	                <DayBox day="Wednesday" classes={this.state.wednesday}/>
-	                <DayBox day="Thursday" classes={this.state.thursday}/>
-	                <DayBox day="Friday" classes={this.state.friday}/>
+                    <div>
+                        <DayBox day="Monday" classes={this.state.monday}/>
+                        <DayBox day="Tuesday" classes={this.state.tuesday}/>
+                        <DayBox day="Wednesday" classes={this.state.wednesday}/>
+                        <DayBox day="Thursday" classes={this.state.thursday}/>
+                        <DayBox day="Friday" classes={this.state.friday}/>
+                    </div>
+
                 </div>
                 <Deadlines/>
                 <button className="signOutButton" onClick={() => app.auth().signOut()}>Sign out</button>
