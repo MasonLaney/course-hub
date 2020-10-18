@@ -31,3 +31,57 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #81D4FA;
+    font-family: 'Roboto';
+    text-align: center;
+}
+
+.login {
+    background-color: white;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 5px 8px;
+    width: 550px;
+    height: 300px;
+    margin: auto;
+    position: absolute;
+    top: -15%; left: 0; bottom: 0; right: 0;
+    padding-top: 25px;
+}
+
+.inputText {
+    padding-top: 8px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.button {
+    width: 30%;
+    height: 10%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 60%; left: 0; bottom: 0; right: 0;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #CFD8DC;
+    color: black;
+    border-color: black;
+}
+
+.titleText{
+    padding-top: 10px;
+    font-size: 26px;
+    line-height: 0.7;
+    padding-bottom: 3px;
+}
+
+.flavorText {
+    font-size: 14px;
+    padding-top: -20px;
+    padding-bottom: 14px;
+}
