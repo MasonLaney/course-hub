@@ -10,7 +10,7 @@ const DayBox = (props) => {
             <div style={{backgroundColor: "white", display: "inline-block"}}>
                 <h2>{day}</h2>
                 {classes.map(item => {
-                    return(<p>{item}</p>)
+                    return(<p>{item.split('-')[0]}</p>)
                 })}
             </div>
         </div>
