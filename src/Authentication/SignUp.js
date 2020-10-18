@@ -28,7 +28,7 @@ const SignUp = ({ history }) => {
             <form onSubmit={handleSignUp} className="inputText">
                 <label>
                     UNC Email:
-                    <input name="email" type="email" placeholder="onyen@live.unc.edu" />
+                    <input name="email" type="email" placeholder="onyen@live.unc.edu"/>
                 </label>
 	            <p></p>
                 <label>
