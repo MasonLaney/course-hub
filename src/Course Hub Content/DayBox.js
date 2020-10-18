@@ -10,7 +10,16 @@ const DayBox = (props) => {
             <div style={{backgroundColor: "white", display: "inline-block"}}>
                 <h2>{day}</h2>
                 {classes.map(item => {
-                    return(<p>{item.split('-')[0]}</p>)
+                    return(
+                        <button
+                            className="dayButton"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                window.location.href= item.link;
+                            }}
+                        >
+                            {item.class.split('-')[0]}
+                        </button>)
                 })}
             </div>
         </div>

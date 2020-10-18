@@ -2,26 +2,31 @@
   {
     "class": "AMST 276-001",
     "time": " TuTh 3:00PM - 4:15PM",
+    "link": "https://sakai.unc.edu/portal/site/606d9734-70a8-4350-8a16-8cf3cb9380b3",
     "key": 1
   },
   {
     "class": "COMP 311-001",
     "time": " MoWe 8:45AM - 10:00AM Fr 9:20AM - 10:10AM",
+    "link": "https://sakai.unc.edu/portal/site/325bf7ab-2b78-4686-ab88-3dc4957f82da",
     "key": 2
   },
   {
     "class": "COMP 426-001",
     "time": " TuTh 4:45PM - 6:00PM",
+    "link": "https://sakai.unc.edu/portal/site/ae14c138-0e01-414c-89fd-d3174babcebd ",
     "key": 3
   },
   {
     "class": "COMP 435-001",
     "time": " MoWe 4:00PM - 5:15PM",
+    "link": "https://sakai.unc.edu/portal/site/325bf7ab-2b78-4686-ab88-3dc4957f82da",
     "key": 4
   },
   {
     "class": "COMP 455-001",
     "time": " TuTh 11:30AM - 12:45PM",
+    "link": "https://sakai.unc.edu/portal/site/1e70e11c-8800-4522-86e9-84c992f8d3a0",
     "key": 5
   }
 ]
