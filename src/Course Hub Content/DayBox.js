@@ -5,12 +5,16 @@ const DayBox = (props) => {
     const classes = props.classes
 
     return(
-        <div>
-            <h2>{day}</h2>
-            {classes.map(item => {
-                return(<p>{item}</p>)
-            })}
+
+        <div class="grid-container">
+            <div style={{backgroundColor: "white", display: "inline-block"}}>
+                <h2>{day}</h2>
+                {classes.map(item => {
+                    return(<p>{item}</p>)
+                })}
+            </div>
         </div>
+
 
     )
 }
